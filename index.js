@@ -10,7 +10,7 @@ const morgan = require("morgan")
 const bodyParser = require("body-parser")
 const dataRouter = require("./route")
 
-const PORT = process.env.PORT || 1993
+const PORT = process.env.PORT || 3000
 
 // Defining middleware
 app.use(cors())

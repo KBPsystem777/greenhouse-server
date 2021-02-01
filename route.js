@@ -28,7 +28,7 @@ router.post("/", async (req, res, next) => {
     // Killing the Chrome launcher on the server as soon as the audit completes
     await chrome.kill()
 
-    let networkRequests = runnerResult.lhr.audits
+    let networkRequests = runnerResult.lhr
     // Send back the `networkRequests` object to the client
     // This contains the needed JSON data for the greenhouse computation
     // This returned JSON should be stored on the app's state
